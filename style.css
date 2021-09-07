@@ -164,10 +164,10 @@ img {
   .middlediv:nth-child(1),
   .middlediv:nth-child(2) {
     width: 99%;
-   margin: auto;
+   margin: 10px 5px;
   }
   .one-card{
-    margin: auto;
+    margin: 10px 5px;
   }
   .smalldiv1,
   .smalldiv2 {
@@ -178,7 +178,7 @@ img {
   .aside {
     width: 99%;
     overflow: hidden;
-    margin: auto;
+     margin: 10px 5px;
   }
   .smalldiv1 .item,
   .smalldiv2 .item {
