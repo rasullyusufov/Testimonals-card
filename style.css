@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/17973908.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+header {
+  width: 80%;
+  height: initial;
+  display: flex;
+}
+
+.aside {
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 5px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 170px;
+}
+.aside h3 {
+  color: #000;
+}
+.middle {
+  display: flex;
+}
+.one-card {
+  border-radius: 5px;
+}
+
+.smalldiv1 {
+  width: 20%;
+  height: 50%;
+  background-color: rgba(59, 76, 77, 0.1);
+  margin: 5px 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 12px 6px rgba(59, 76, 77, 0.2);
+  -moz-box-shadow: 0px 0px 12px 6px rgba(59, 76, 77, 0.2);
+  box-shadow: 0px 0px 12px 6px rgba(59, 76, 77, 0.2);
+}
+.smalldiv2 {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 5px 10px;
+  padding: 10px;
+  width: 20%;
+  border-radius: none;
+  height: 50%;
+  -webkit-box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 12px 6px rgba(255, 255, 255, 0.2);
+}
+.smalldiv2 h3 {
+  color: rgb(41, 41, 41);
+}
+
+.middlediv:nth-child(1) {
+  background-color: rgba(89, 23, 150, 0.5);
+  padding: 10px;
+  margin: 5px 10px;
+  width: 70%;
+  height: 60%;
+  -webkit-box-shadow: 0px 0px 12px 6px rgba(89, 23, 150, 0.2);
+  -moz-box-shadow: 0px 0px 12px 6px rgba(89, 23, 150, 0.2);
+  box-shadow: 0px 0px 12px 6px rgba(89, 23, 150, 0.2);
+}
+
+.middlediv:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 5px 10px;
+  padding: 10px;
+  width: 70%;
+  height: 60%;
+  -webkit-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 12px 6px rgba(34, 60, 80, 0.2);
+}
+
+h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+p {
+  color: rgb(83, 83, 83);
+  text-align: justify;
+  font-size: 13px;
+}
+h4 {
+  color: rgb(78, 78, 78);
+  margin: 5px;
+}
+.item {
+  display: flex;
+}
+.item p {
+  margin: 5px;
+}
+
+img {
+  height: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.smalldiv {
+  width: 30%;
+}
+.one {
+  width: 70%;
+}
+
+@media (max-width: 1000px) {
+  .smalldiv1 .item,
+  .smalldiv2 .item {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+  .aside {
+    width: 95%;
+    height: 180px;
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 750px) {
+  header {
+    height: 99%;
+    width: 99%;
+  }
+  body {
+    background: url(mp);
+    background-color: rgba(50, 99, 102, 0.2);
+  }
+}
+
+@media (max-width: 690px) {
+  .middlediv:nth-child(1),
+  .middlediv:nth-child(2) {
+    width: 65%;
+  }
+  .smalldiv1,
+  .smalldiv2 {
+    width: 35%;
+    height: initial;
+  }
+}
+@media (max-width: 550px) {
+  .middle {
+    display: block;
+  }
+  .middlediv:nth-child(1),
+  .middlediv:nth-child(2) {
+    width: 99%;
+   margin: auto;
+  }
+  .one-card{
+    margin: auto;
+  }
+  .smalldiv1,
+  .smalldiv2 {
+    width: 99%;
+    height: initial;
+  
+  }
+  .aside {
+    width: 99%;
+    overflow: hidden;
+    margin: auto;
+  }
+  .smalldiv1 .item,
+  .smalldiv2 .item {
+    display: flex;
+  }
+}
